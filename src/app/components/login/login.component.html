@@ -1,0 +1,61 @@
+
+<div class="col-md-4 " style="margin: auto; width: 60%; border: 5px solid #FFFF; padding: 100px;">
+    <div class="card card-container">
+      <img
+        id="profile-img"
+        src="//ssl.gstatic.com/accounts/ui/avatar_2x.png"
+        class="profile-img-card"
+        
+      />
+      <form  name="form1"(ngSubmit)="getUserById()">
+        <div class="form-group">
+          <label for="username">Username</label>
+          <input
+            type="text"
+            class="form-control"
+            name="username"   [(ngModel)] = "username"/>
+          
+        </div>
+        <div class="form-group">
+          <label for="password">Password</label>
+          <input
+            type="password"
+            class="form-control"
+            name="password"
+            required
+            minlength="6"
+            [(ngModel)] = "userpassword"
+          />
+          <div
+            class="alert alert-danger"
+            role="alert"
+           
+          >
+           
+          </div>
+        </div>
+        <div class="form-group">
+          <button class="btn btn-primary btn-block">
+            Login
+          </button>
+        </div>
+        <div class="form-group">
+          <div
+            class="alert alert-danger"
+            role="alert" 
+          >
+            
+          </div>
+        </div>
+      </form>
+     
+    </div>
+  </div>
+
+  <!-- <div *ngFor="let user of users">
+    <h3>{{user.username}}</h3>
+    <p>{{user.password }}</p>
+    <p>{{user.email}}</p>
+</div> -->
+
+

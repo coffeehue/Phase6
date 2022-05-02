@@ -1,4 +1,4 @@
-:host ::ng-deep .p-dropdown {
+/* :host ::ng-deep .p-dropdown {
     width: 14rem;
     font-weight: normal;
 }
@@ -100,4 +100,11 @@
         align-items: center;
         width: 100%;
    }
+} */
+.p-grid {
+    display: flex;
+    flex-wrap: wrap;
+    margin-right: -0.5rem;
+    margin-left: -0.5rem;
+    margin-top: -0.5rem;
 }
