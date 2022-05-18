@@ -1,12 +1,4 @@
-/* .center {
-    margin: auto;
-    width: 60%;
-    border: 5px solid #FFFF00;
-    padding: 10px;
-    } */
-
-
-    *,
+*,
 *::before,
 *::after {
   box-sizing: border-box;
@@ -155,7 +147,7 @@ li.google {
 }
 
 li.google a::before {
-  background-image: url("google.png");
+  background-image: url("../images/google.png");
 }
 
 li.fb {
@@ -164,7 +156,7 @@ li.fb {
 
 li.fb a::before {
   margin: 0;
-  background-image: url("fb.png");
+  background-image: url("../images/fb.png");
 }
 
 @media only screen and (max-width: 400px) {

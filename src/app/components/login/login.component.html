@@ -1,4 +1,4 @@
-
+<!-- 
 <div class="col-md-4 " style="margin: auto; width: 60%; border: 5px solid #FFFF; padding: 100px;">
     <div class="card card-container">
       <img
@@ -50,7 +50,7 @@
       </form>
      
     </div>
-  </div>
+  </div> -->
 
   <!-- <div *ngFor="let user of users">
     <h3>{{user.username}}</h3>
@@ -59,3 +59,64 @@
 </div> -->
 
 
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Welcome, Back</title>
+   
+    <link rel="stylesheet" href="login.component.css">
+    <style>
+        .srouce{
+            text-align: center;
+            color: #ffffff;
+            padding: 10px;
+        }
+    </style>
+</head>
+<body>
+
+    <div class="main-container">
+        <div class="form-container">
+
+            <div class="srouce"><a title="Learn How to create Beautiful HTML & CSS login page template">Welcome Back</a></div>
+
+            <div class="form-body">
+                <h2 class="title">Log in with</h2>
+                <div class="social-login">
+                    <ul>
+                        <li class="google"><a href="#">Google</a></li>
+                        <li class="fb"><a href="#">Facebook</a></li>
+                    </ul>
+                </div><!-- SOCIAL LOGIN -->
+
+                <div class="_or">or</div>
+
+                <form name="form1"(ngSubmit)="getUserById()" class="the-form">
+
+                    <label for="email">Email</label>
+                    <input type="email" name="username" id="email" placeholder="Enter your Username" [(ngModel)] = "username">
+
+                  
+                    <label for="password">Password</label>
+                    <input type="password" name="password" id="password" placeholder="Enter your password" required
+                    minlength="6"
+                    [(ngModel)] = "userpassword">
+
+                    <input type="submit" value="Log In">
+
+                </form>
+
+            </div><!-- FORM BODY-->
+
+            <div class="form-footer">
+                <div>
+                    <span>Don't have an account?</span> <a  routerLink="/signup">Sign Up</a>
+                </div>
+            </div><!-- FORM FOOTER -->
+
+        </div><!-- FORM CONTAINER -->
+    </div>
+
+</body>
+</html>
